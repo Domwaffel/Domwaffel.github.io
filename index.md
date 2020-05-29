@@ -41,6 +41,8 @@ button
 
 [button url="http://www.google.com"]
 
+[Click me](http://www.google.com){: .btn}
+
 
 
 testing an iFrame in markdown

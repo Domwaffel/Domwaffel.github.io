@@ -40,7 +40,7 @@ man kann auch in **Bold**, _Italic_ und `Code` schreiben
 testing an iFrame in markdown
 
 <iframe src="https://www.html-seminar.de/"
-width="95%" height="100" name="iFrameBeispiel" onload="iFrameAnpassen(this)" >
+width="95%" height="500" name="iFrameBeispiel" onload="iFrameAnpassen(this)" >
 
   <p>Ihr Browser kann leider keine eingebetteten Frames anzeigen:
   Sie können die eingebettete Seite über den folgenden

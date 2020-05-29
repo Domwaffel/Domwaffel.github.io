@@ -77,14 +77,16 @@ width="95%" height="100" name="iFrameBeispiel" onload="iFrameAnpassen(this)" &gt
 
 <p>testing an iFrame in markdown</p>
 
-<iframe src="https://www.html-seminar.de/" width="95%" height="500" name="iFrameBeispiel" onload="iFrameAnpassen(this)">
-
-  <p>Ihr Browser kann leider keine eingebetteten Frames anzeigen:
-  Sie können die eingebettete Seite über den folgenden
-  Verweis aufrufen:
-  https://www.html-seminar.de/
-  </p>
-
+<script>
+function setIframeHeight() {
+  var iFrameID = document.getElementById('iframe');
+  if(iFrameID) {
+    iFrameID.height = "";
+    iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+  }
+}
+</script>
+<iframe src="http://password-checker.online-domain-tools.com/" name="Locker Shop" id="Locker Shop" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="400" width="100%" onload="setIframeHeight();">
 </iframe>
 
 

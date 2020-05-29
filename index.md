@@ -1,4 +1,4 @@
-# Domwaffels website
+# Dominix website
 ## Es wird aber erstmal getestet
 
 Hier kommt die Erste Code-Box:

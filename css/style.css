@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: white;
-  color: black;
+  background: #151D21;
+  color: white;
 }
 
 p {
-  color: black;
+  background: #151D21;
+  color: white;
 }
 
 .btn {
@@ -21,6 +28,15 @@ p {
   border-radius: 8px;
 }
 
+.link {
+  color: #003ec4;
+  text-decoration: underline;
+}
+
+.table {
+  border: 1;
+}
+
 .code {
     background-color: #cfcfcf;
     border: none;
@@ -34,6 +50,11 @@ p {
 }
 
 .site-footer {
-  background-color: lightgrey;
-  color: black;
+  background: #151D21;
+  color: white;
+}
+
+.main-content {
+  background: #151D21;
+  color: white;
 }

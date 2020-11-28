@@ -32,3 +32,8 @@ p {
     font-size: 16px;
     margin: 0px 5px;
 }
+
+.site-footer {
+  background-color: lightgrey;
+  color: black;
+}

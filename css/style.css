@@ -25,12 +25,12 @@ p {
     background-color: #cfcfcf;
     border: none;
     color: #000000;
-    padding: 0px 5px;
+    padding: 4px 5px;
     text-align: left;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 0px 5px;
+    margin: 4px 5px;
 }
 
 .site-footer {

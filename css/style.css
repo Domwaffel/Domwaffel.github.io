@@ -1,5 +1,10 @@
+body {
+  background-color: black;
+  color: green;
+}
+
 p {
-  color: darkgreen;
+  color: red;
 }
 
 .button {

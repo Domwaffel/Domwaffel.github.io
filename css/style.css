@@ -7,10 +7,10 @@ p {
   color: red;
 }
 
-.button {
+.btn {
   background-color: #FFFF00;
   border: none;
-  color: #00FF00;
+  color: #000000;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;

@@ -32,6 +32,7 @@
       document.addEventListener("keydown",keyPush);
       setInterval(game,1000/10);
     }
+    pause=false
     count=0;
     px=py=10;
     gs=tc=20;
@@ -40,6 +41,7 @@
     trail=[];
     tail = 5;
     function game() {
+      if(!pause){
 
       px+=xv;
       py+=yv;
@@ -84,6 +86,9 @@
       }
       ctx.fillStyle="red";
       ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
+    }else{
+      console.console.log("game Paused");
+    }
     }
 
     function keyPush(evt) {

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+header .logo a {
+  background-image: url("Homepage/images/logoo.png");
+  background-size: 90px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 100px;
+  width: 111px;
+  text-indent: -999999px;
+  position: relative;
+  top: -15px;
+}
+
+.topnav {
+  list-style: none;
+  font-family: 'Roboto Thin';
+  color: aliceblue;
+  margin: 50px 0 0 0;
+  text-align: right;
+}
+
+body {
+  background: #151D21;
+  background-image: url('../images/bg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:hover {
+  color: #ff7a7a;
+}
+
+li {
+  display: inline-block;
+  padding-right: 7%;
+  margin: 10px 0 0 0;
+  font-size: 36px;
+}
+
+li:first-child {
+  float: left;
+}
+
+footer {
+  font-family: 'Roboto Thin';
+  text-align: center;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  position: fixed;
+  bottom: 0pt;
+}

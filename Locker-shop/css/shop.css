@@ -7,7 +7,7 @@
 .element::-webkit-scrollbar { width: 0 !important }
 
 header .logo a {
-  background-image: url("../images/logoo.png");
+  background-image: url("../images/logoo.png"); 
   background-size: 90px;
   background-repeat: no-repeat;
   display: inline-block;

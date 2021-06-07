@@ -11,20 +11,19 @@ html {
 .element::-webkit-scrollbar { width: 0 !important }
 
 body {
-    background: #151D21;
-    background-image: url('../images/bg.png');
+    background: #FFF;
     background-size: 100%;
     background-repeat: no-repeat;
-    color: white;
+    color: 000;
 }
 
 a {
-    text-decoration: none;
-    color: aliceblue;
+  text-decoration: none;
+  color: #6200EE;
 }
 
 a:hover {
-    color: #ff7a7a;
+  color: #d602ee;
 }
 
 header .logo a {

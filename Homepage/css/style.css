@@ -58,24 +58,23 @@ html {
 }
 
 body {
-  background: #151D21;
-  background-image: url('../images/bg.png');
+  background: #FFFFFF;
   background-size: 100%;
   background-repeat: no-repeat;
-  color: #FFFFFF;
+  color: #000;
 }
 
 p {
-  color: white;
+  color: #000;
 }
 
 a {
   text-decoration: none;
-  color: aliceblue;
+  color: #6200EE;
 }
 
 a:hover {
-  color: #ff7a7a;
+  color: #d602ee;
 }
 
 li {
@@ -114,8 +113,8 @@ section header {
 section .mybutton {
   font-family: 'Roboto';
   font-size: 24px;
-  color: #151D21;
-  background: #ff7a7a;
+  color: #000;
+  background: #03DAC5;
   display: inline-flex;
   padding: 6px;
   margin-top: 30px;
@@ -123,37 +122,6 @@ section .mybutton {
   margin-left: 5%;
   border: none;
   border-radius: 5px;
-}
-
-.btn {
-  background-color: #FFFF00;
-  border: none;
-  color: #000000;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 4px;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
-.link {
-  color: #003ec4;
-  text-decoration: underline;
-}
-
-.code {
-  background-color: #cfcfcf;
-  border: none;
-  color: #000000;
-  padding: 4px 5px;
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 5px;
 }
 
 .main-content {
@@ -182,13 +150,13 @@ footer {
   margin: auto;
   padding: 5px;
   text-align: center;
-  width: 300px;
+  width: 200px;
 }
 
 .features figure img {
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
 }
 
 figure img:hover {
@@ -203,7 +171,7 @@ figure figcaption {
 }
 
 figure figcaption a:hover {
-  color: gray;
+  color: #d602ee;
 }
 
 @media screen and (max-width: 1140px) {

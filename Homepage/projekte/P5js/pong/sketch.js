@@ -2,22 +2,22 @@
 const fps = 30;
 const canvasX = 800;
 const canvasY = 600;
-let gameEnded = false;
+let gameEnded;
 
 //declaring Ball variables
-let bX = 400;
-let bY = 300;
-let bSpeedX = 10;
-let bSpeedY = 0;
-let pongs = 0;
+let bX;
+let bY;
+let bSpeedX ;
+let bSpeedY;
+let pongs;
 
 //declaring Player variables
 const pOffset = 30;
 const p1x = pOffset;
-let p1y = 300;
+let p1y;
 let p1score = 0;
 const p2x = canvasX - pOffset;
-let p2y = 300;
+let p2y;
 let p2score = 0;
 
 function setup(){
@@ -25,6 +25,8 @@ function setup(){
   createCanvas(canvasX, canvasY);
   //declaring Frames per Second
   frameRate(fps);
+  //set variables
+  resetVariables();
 }
 
 function draw(){
@@ -74,8 +76,8 @@ function drawObjects(){
 
 function resetVariables(){
   //resetting Ball variables
-  bX = 400;
-  bY = 300;
+  bX = canvasX/2;
+  bY = canvasY/2 + 9;
   bSpeedX = 10;
   bSpeedY = 0;
   pongs = 0;
@@ -113,35 +115,46 @@ function checkKeys() {
 
 function calculateBall(){
   //collision Player 1
-  //detect if the ball cold hit the player plank
+  //detect if the ball could hit the player plank
   if(bX <= pOffset + 10){
     //detect if ball hits the player plank
     if(bY <= p1y + 50 && bY >= p1y -50){
       //inversing ball speed on hit
-      bSpeedX = bSpeedX * -1;
+      bSpeedX = bSpeedX * -1.1;
       pongs = pongs +1;
+      bSpeedY = bSpeedY - (p1y - bY) * 0.1;
     }
   }
 
   //collision Player 2
-  //detect if the ball cold hit the player plank
+  //detect if the ball could hit the player plank
   if(bX >= (canvasX - pOffset) - 10){
     //detect if ball hits the player plank
     if(bY <= p2y + 50 && bY >= p2y -50){
       //inversing ball speed on hit
-      bSpeedX = bSpeedX * -1;
+      bSpeedX = bSpeedX * -1.1;
       pongs = pongs + 1;
+      bSpeedY = bSpeedY - (p2y - bY) * 0.1;
     }
+  }
+
+  //roof and floor colission
+  //roof
+  if(bY <= 5){
+    bSpeedY = bSpeedY * -1;
+  }
+  if(bY >= canvasY - 5){
+    bSpeedY = bSpeedY * -1;
   }
 
   //Win detection
   //Player 1 lost
-  if(bX <= 10){
+  if(bX <= 5){
     p2score = p2score + 1;
     gameEnded = true;
   }
   //Player 2 lost
-  if(bX >= canvasX - 10){
+  if(bX >= canvasX - 5){
     p1score = p1score +1;
     gameEnded = true;
   }

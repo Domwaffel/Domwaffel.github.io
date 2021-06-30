@@ -1,2 +1,4 @@
 # dmeurer.github.io
-This my own website. Here i learn web development, css and Javascript. But feel free to commit.
+This my own website. Im learning JavaScript with some P5.js programms. 
+
+And you can find a lot of other procets as well.

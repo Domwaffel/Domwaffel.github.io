@@ -24,13 +24,21 @@ function setup() {
 
 function draw() {
 
+  // runs when the game first starts or player dies.
   if(passiveMode){
     background(0);
 
+    //menu message
     fill(0, 255, 0);
     textSize(40);
     text("W drücken um zu starten", width/2 - 200, height / 2 +20);
 
+    //print the Score
+    fill(0, 255, 0);
+    textSize(50);
+    text(score, width/2, 70);
+
+    //quit the menu
     if(keyIsDown(87)){
       initGame();
       passiveMode = false;
@@ -97,14 +105,32 @@ function updateObstacles(){
 }
 
 function updateColisions(){
+  //loop every obstacle
   for (let i = 0; i <= obstCount; i++){
+
+    //look if players x is nearby
     if(px+10 >= obstX[i] - 15 && px-10 <= obstX[i]+15){
+
+      //look if players y is inside the gap
       if(py + 10 <= obstY[i] && py -10 >= obstY[i]-obstGap){
-        score = score + 1;
+
+        //check for a line with the width obstV to only update the score once.
+        if(px >= obstX[i] && px < obstX[i] + obstV){
+
+          //updating score
+          score = score + 1;
+        }
       }else{
-        initGame();
+        // hit a obstacle, start the menu screen
+        passiveMode = true;
       }
     }
+  }
+
+  //colision with the floor / celing
+  if(py >= height || py <= 0){
+    // hit the floor / celing, start the menu screen
+    passiveMode = true;
   }
 }
 

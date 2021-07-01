@@ -45,11 +45,15 @@ function draw() {
     }
 
   }else{
+    // A background is always a good start.
     background(0);
 
+    //call gamefunctions
     updatePlayer();
     updateObstacles();
     updateColisions();
+
+    //Draw everything:
 
     //drawing the player
     fill(255, 255, 0);
@@ -73,33 +77,37 @@ function draw() {
 
     fill(255, 255, 255);
     for(let i = 0; i < width/10; i ++ ){
-    for(let j = 0; j < height/10; j++){
-    ellipse(i*10, j*10, 2, 2);
+      for(let j = 0; j < height/10; j++){
+        ellipse(i*10, j*10, 2, 2);
+      }
+    }
+    */
   }
-}
-*/
-}
 }
 
 function updatePlayer(){
+  //I may add a bot
   if (!botMode){
+    //jump key
     if(keyIsDown(87)){
-      if(pv >= 10){
-        pv = pv + 1;
-      }else{
-        pv = 10;
-      }
+      //set velocity
+      pv = 10;
     }
   }
-  pv = pv - 1;
+  //new players y position
   py = py - pv;
+  //reconfigurate velocity
+  pv = pv - 1;
 }
 
 function updateObstacles(){
+  //loop every obstacle
   for (let i = 0; i <= obstCount; i++){
+    //reset the obstacle if its behind the player off the screen
     if(obstX[i] <= -30){
       obstX[i] = obstX[i] + 1000 + width/obstCount;
     }
+    //move the obstacle forward
     obstX[i] = obstX[i] - obstV;
   }
 }
@@ -135,11 +143,16 @@ function updateColisions(){
 }
 
 function initGame(){
-  //reinitiate Obstacles
+  //reset obstacles
+  //loop through every obstacle
   for (let i = 0; i <= obstCount; i++){
+    //placing the obstacle off the screen
     obstX[i] = Math.floor(width+(width/obstCount*i));
+    //define the y pos of the gap
     obstY[i] = height/2 + Math.floor(Math.random()*(maxOffset*2+1));
   }
+
+  //resetting game variables
   score = 0;
   py = height/2;
   pv = 10;
@@ -148,8 +161,8 @@ function initGame(){
 
 /*
 
-// Der naive versuch das Objektorientiert zu schaffen.
-// gescheitert
+// I tried to do this the Object oriented way.
+// I failed.
 
 let width = 600;
 let height = 400;

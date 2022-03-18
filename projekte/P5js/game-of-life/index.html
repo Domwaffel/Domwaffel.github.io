@@ -2,31 +2,35 @@
 <html lang="de">
 
 <head>
-  <meta charset="UTF-8">
-  <title>DMeurer</title>
-  <link rel="shortcut icon" href="../../../images/logoo.png">
-  <link rel="stylesheet" href="../../../css/style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul class="topnav">
-        <li class="logo"><a href="../../../"></a></li>
-        <li><a href= "../../../">Home</a></li>
-        <li><a href= "../../../projekte/">Projekte</a></li>
-        <li><a href="../../../kontakt/">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="top">
-    <header font-size: 20px>
-      <a href="https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens">Conways Spiel des Lebens</a>
-    </header>
+    <meta charset="UTF-8">
+    <title>DMeurer</title>
+    <link rel="shortcut icon" href="../../../images/logo.png">
+    <link rel="stylesheet" href="../../../css/style.css">
     <script src="../p5.js"></script>
     <script src="sketch.js"></script>
-		<p>Dargestellt mit P5.js</p>
-    <p>Inspiriert von <a href="https://thecodingtrain.com/">"The coding train"</a></p>
-  </section>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href=""></a>
+        </div>
+        <ul class="topnav">
+            <li><a href="../../../">Home</a></li>
+            <li><a href="../../../projekte/">Projekte</a></li>
+            <li><a href="../../../kontakt/">Kontakt</a></li>
+        </ul>
+    </header>
+
+    <div id="project-content">
+        <div class="project-title">
+            Conways "Game of Life"
+        </div>
+        <div id="canvas" width="500" height="500"></div>
+        <div class="project-notes">
+            Inspiriert von <a class="link" href="https://thecodingtrain.com/">"The coding train"</a>
+        </div>
+    </div>
 </body>
+
 </html>

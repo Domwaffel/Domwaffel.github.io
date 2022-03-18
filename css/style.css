@@ -52,7 +52,6 @@ section.content {
 
 footer {
     padding: 8px;
-    margin-top: auto;
 }
 
 
@@ -202,6 +201,52 @@ img.project-logo {
 }
 
 
+/* contact page */
+
+.contact {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+}
+
+.contact-img {
+    box-shadow: 0 0 1em rgb(53, 53, 63);
+    border-radius: 10px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-name {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1F2937;
+    margin: 16px;
+}
+
+.contact-subtitle {
+    margin-left: 32px;
+}
+
+.contact-socialmedia {
+    display: flex;
+}
+
+.contact-icons {
+    list-style: none;
+    list-style-type: none;
+    margin: 0px;
+    margin-top: 8px;
+}
+
+.contact-icons li {
+    float: left;
+    margin: 8px;
+}
+
+
 /* stuff I need often */
 
 .header {
@@ -252,4 +297,9 @@ div.logo-small {
     width: 50px;
     border-radius: 25px;
     flex: 0 0 auto;
+}
+
+img.icon {
+    height: 30px;
+    width: 30px;
 }

@@ -3,9 +3,9 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    background-color: #1F2937;
-    color: #F9FAF8;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
     min-height: 100vh;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
@@ -17,9 +17,11 @@ header {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 16px;
-    margin: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
     flex: 0 0 auto;
+    background-color: #1F2937;
+    color: #F9FAF8;
 }
 
 header ul {
@@ -128,6 +130,7 @@ img.banner-right {
 .projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-card {
@@ -136,7 +139,7 @@ img.banner-right {
     align-items: center;
     justify-content: space-between;
     border-radius: 10px;
-    box-shadow: 0 0 1em rgb(0, 255, 255);
+    box-shadow: 0 0 1em rgb(53, 53, 63);
     margin: 32px;
     padding: 16px;
     background-color: #E5E7EB;
@@ -169,6 +172,36 @@ img.project-logo {
 }
 
 
+/* project site */
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 900;
+    padding: 16px;
+}
+
+.project-notes {
+    text-align: center;
+}
+
+#canvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+
+
 /* stuff I need often */
 
 .header {
@@ -179,7 +212,12 @@ img.project-logo {
 }
 
 
-/* buttons */
+/* links */
+
+.link {
+    color: #3882F6;
+    text-decoration: none;
+}
 
 button {
     color: #3882F6;

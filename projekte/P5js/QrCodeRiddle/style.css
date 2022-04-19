@@ -1,0 +1,43 @@
+.project-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-content-left {
+    font-size: 36px;
+    font-weight: 900;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*gap: 45px;*/
+}
+
+.project-content-input {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.project-content-right {
+    font-size: 18px;
+}
+
+.project-button {
+    color: white;
+    background-color: #3882F6;
+    padding: 5px;
+    border-radius: 5px;
+    width: 25px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+#canvas {
+    margin: 0px;
+    border: solid black;
+}

@@ -1,9 +1,15 @@
+// variables for rows columns and the per ro and column
 let cols;
 let rows;
-let resX = 10;
-let resY = 10;
+let resX;
+let resY;
+// number of shifts for ach row
 let shifts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+// only used to quickly store x and y starting positions
+let x;
+let y;
 
+// the grid given by the riddle
 var grid = [
     [1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0],
@@ -28,23 +34,34 @@ var grid = [
     [1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
 ]
 
+// will run once when the page loads
 function setup() {
+    // creating the canvas so that every pixel is 42x42px
     var canvas = createCanvas(27 * 42, 21 * 42);
     canvas.parent("canvas");
+    //number of rows and columns
     cols = 27;
     rows = 21;
+    //resX and resY are the number of pixels per row and column
     resX = width / cols;
     resY = height / rows;
 }
 
+// will run each frame and is automatically called by p5.js
 function draw() {
+    //resetting the background
     background(255);
 
+    //loop through the rows
     for (let i = 0; i < rows; i++) {
+        //loop through the columns
         for (let j = 0; j < cols; j++) {
-            let y = i * resY;
-            let x = j * resX;
+            //if the current grid value is 1, draw a black rectangle
             if (grid[i][j] == 1) {
+                //find the pixel coordinates of the current row and column
+                y = i * resY;
+                x = j * resX;
+                //draw a black rectangle
                 fill(0);
                 stroke(0);
                 rect(x, y, resX - 1, resY - 1);
@@ -54,19 +71,24 @@ function draw() {
 }
 
 function rotateRows(rows, direction) {
+    //shift the columns in a specific row
     if (direction == "right") {
         grid[rows - 1].unshift(grid[rows - 1].pop());
     } else {
         grid[rows - 1].push(grid[rows - 1].shift());
     }
+
+    //updates the shifts counter for the given row
     if (direction == "right") shifts[rows - 1]++;
     else shifts[rows - 1]--;
 
-    console.log(rows + "display");
+    //writes the current shifts counter to the specific counter of that row
     document.getElementById(rows + "display").innerHTML = shifts[rows - 1];
 }
 
-
+// this will run the Page finishes loading
+// Add event listeners to the buttons to call the rotateRows function with the appropriate parameters
+// the parameters are the row you want to shift and the direction you want to shift it
 window.onload = function() {
     document.getElementById("1left").addEventListener("click", function() { rotateRows(1, "left"); });
     document.getElementById("1right").addEventListener("click", function() { rotateRows(1, "right"); });

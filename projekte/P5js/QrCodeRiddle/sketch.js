@@ -83,7 +83,7 @@ function rotateRows(rows, direction) {
     else shifts[rows - 1]--;
 
     //writes the current shifts counter to the specific counter of that row
-    document.getElementById(rows + "display").innerHTML = shifts[rows - 1];
+    document.getElementById(rows + "display").textContent = shifts[rows - 1];
 }
 
 // this will run the Page finishes loading

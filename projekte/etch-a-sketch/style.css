@@ -1,0 +1,21 @@
+#boxContainer {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxRow {
+    flex: auto;
+    display: flex;
+}
+
+.boxBox {
+    flex: auto;
+    transition: 2s;
+}
+
+.boxBox:hover {
+    background-color: pink;
+    transition: 0s;
+}

@@ -31,11 +31,3 @@ window.onload = function() {
         resetGrid(window.prompt("Enter the size of the grid:"));
     }
 };
-/*
-const step1 = document.createElement('p');
-step1.textContent = "Hey, Im red";
-step1.style.color = "red";
-document.querySelector("#container").appendChild(step1);
-
-document.getElementById("5left").addEventListener("click", function() { rotateRows(5, "left"); });
-*/

@@ -2,15 +2,19 @@
 	{
 		"id": 0,
 		"active": true,
+		"sliderActive": true,
+		"date": "24.04.2022",
 		"title": "Riddle solver",
 		"shortDescription": "Helped solve a QR-code riddle of a geocache.",
 		"description": "This tool helped me solve a riddle of a geocache. The goal was to move parts of an image to form a QR-code. After the pen & scissors approach turned out to be messy, ive created this site and solved the riddle within 10 minutes.",
-		"titleImageRef": "images/projects/calculator.png",
+		"titleImageRef": "images/projects/QrCode.png",
 		"pageRef": "projects/P5js/QrCodeRiddle/"
 	},
 	{
 		"id": 1,
 		"active": true,
+		"sliderActive": true,
+		"date": "24.04.2022",
 		"title": "Calculator",
 		"shortDescription": "A old school calculator, as a part of the Odin course.",
 		"description": "This calculator was a part of the Odin course. It was a good exercise to get used to the DOM and event listeners. The calculator is able to do basic calculations, but nothing more fancy.",
@@ -20,6 +24,8 @@
 	{
 		"id": 2,
 		"active": true,
+		"sliderActive": true,
+		"date": "24.04.2022",
 		"title": "Etch-a-Sketch",
 		"shortDescription": "This was meant to be an Etch-a-Sketch, but i got a little distracted.",
 		"description": "This was meant to be an Etch-a-Sketch, but i got a little distracted with effects. Drawing is as simple as hovering and the colored squares will fade the color away.",
@@ -29,6 +35,8 @@
 	{
 		"id": 3,
 		"active": false,
+		"sliderActive": false,
+		"date": "24.04.2022",
 		"title": "Odin Exercise",
 		"shortDescription": "A repo with exercise corresponding to the Odin project.",
 		"description": "This repo contains exercises corresponding to the Odin project. It is a good way to get used to the basics of HTML, CSS and JavaScript.",
@@ -38,15 +46,19 @@
 	{
 		"id": 4,
 		"active": true,
+		"sliderActive": true,
+		"date": "24.04.2022",
 		"title": "Drum Kit",
 		"shortDescription": "A drum kit, as a part of the Odin course.",
 		"description": "This drum kit was a part of the Odin course. It was a good exercise to get used to the DOM and event listeners. The drum kit is able to play sounds, when the corresponding key is pressed.",
-		"titleImageRef": "images/projects/drumKit.png",
+		"titleImageRef": "images/projects/drumkit.png",
 		"pageRef": "projects/drumKit/"
 	},
 	{
 		"id": 5,
 		"active": false,
+		"sliderActive": false,
+		"date": "24.04.2022",
 		"title": "Small Projects",
 		"shortDescription": "A collection of small projects.",
 		"description": "This repo contains small projects, which are not worth a single repo.",
@@ -56,6 +68,8 @@
 	{
 		"id": 6,
 		"active": true,
+		"sliderActive": false,
+		"date": "24.04.2022",
 		"title": "Snake",
 		"shortDescription": "A simple snake game.",
 		"description": "This is a simple snake game. Was made with P5.js.",
@@ -65,6 +79,8 @@
 	{
 		"id": 7,
 		"active": true,
+		"sliderActive": false,
+		"date": "24.04.2022",
 		"title": "Pong",
 		"shortDescription": "A simple pong game.",
 		"description": "This is a simple pong game. Was made with P5.js. Its a two player game. Its a bit buggy when the ball gets too fast.",
@@ -74,6 +90,8 @@
 	{
 		"id": 8,
 		"active": true,
+		"sliderActive": false,
+		"date": "24.04.2022",
 		"title": "Flappy Bird",
 		"shortDescription": "A simple flappy bird game. Ugly as hell.",
 		"description": "This is a simple flappy bird game. Was made with P5.js. Its ugly as hell, but it works. So i got distracted with other projects.",
@@ -83,6 +101,8 @@
 	{
 		"id": 9,
 		"active": true,
+		"sliderActive": true,
+		"date": "24.04.2022",
 		"title": "Game of Life",
 		"shortDescription": "A simple game of life.",
 		"description": "This is a simple game of life. Was made with P5.js. This one is actually kind of cool.",
@@ -92,6 +112,8 @@
 	{
 		"id": 10,
 		"active": true,
+		"sliderActive": true,
+		"date": "24.04.2022",
 		"title": "Gift-Wrapping Algorithm",
 		"shortDescription": "A gift-wrapping algorithm.",
 		"description": "This is a gift-wrapping algorithm. Was made with P5.js. This one is actually kind of cool.",
@@ -101,6 +123,8 @@
 	{
 		"id": 11,
 		"active": false,
+		"sliderActive": false,
+		"date": "24.04.2022",
 		"title": "Discord Bot",
 		"shortDescription": "A discord bot. Didnt do much, but it was fun.",
 		"description": "This is a discord bot. It didnt do much, just some basic commands. But it was fun to make.",

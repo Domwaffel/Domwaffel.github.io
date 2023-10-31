@@ -126,7 +126,7 @@ img.banner-right {
 
 /* project list */
 
-.projects {
+.projects-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

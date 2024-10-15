@@ -2,6 +2,7 @@ import {NgForOf} from "@angular/common";
 import {Component, Input} from "@angular/core";
 import {MatCard, MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
 import {MatChip, MatChipSet} from "@angular/material/chips";
+import {RouterLink} from "@angular/router";
 import {Project} from "../../data/projects/datatypes";
 
 @Component({
@@ -15,6 +16,7 @@ import {Project} from "../../data/projects/datatypes";
 		MatCardHeader,
 		MatCardContent,
 		MatCardTitle,
+		RouterLink,
 	],
 	inputs: [
 		"project",

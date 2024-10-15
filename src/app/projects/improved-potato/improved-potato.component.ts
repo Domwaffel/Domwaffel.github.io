@@ -9,4 +9,8 @@ import {Component} from "@angular/core";
 })
 export class ImprovedPotatoComponent {
 
+	constructor() {
+		window.location.href = "https://github.com/DMeurer/improved-potato"
+	}
+
 }

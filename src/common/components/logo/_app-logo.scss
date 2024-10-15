@@ -1,7 +1,8 @@
 @use "@angular/material" as mat;
 
+
 @mixin theme($theme) {
-  svg.logo>g>.grey {
+  svg.logo > g > .grey {
     opacity: 1;
     fill: mat.get-theme-color($theme, primary);
     fill-opacity: 1;
@@ -12,7 +13,7 @@
   }
 
 
-  svg.logo>g>.dark {
+  svg.logo > g > .dark {
     opacity: 1;
     fill: darken(mat.get-theme-color($theme, primary), 15%);
     fill-opacity: 1;
@@ -23,7 +24,7 @@
   }
 
 
-  svg.logo>g>.trans {
+  svg.logo > g > .trans {
     opacity: 1;
     fill: darken(mat.get-theme-color($theme, primary), 15%);
     fill-opacity: 0.3;

@@ -17,7 +17,7 @@ import {Project} from "../../data/projects/datatypes";
 		MatCardTitle,
 	],
 	inputs: [
-		"project"
+		"project",
 	],
 	templateUrl: "./project-card.component.html",
 	styleUrl: "./project-card.component.scss",

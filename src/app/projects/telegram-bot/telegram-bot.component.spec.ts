@@ -1,18 +1,18 @@
 import {ComponentFixture, TestBed} from "@angular/core/testing";
 
-import {ProjectCardComponent} from "./project-card.component";
+import {TelegramBotComponent} from "./telegram-bot.component";
 
-describe("ProjectCardComponent", () => {
-	let component: ProjectCardComponent;
-	let fixture: ComponentFixture<ProjectCardComponent>;
+describe("TelegramBotComponent", () => {
+	let component: TelegramBotComponent;
+	let fixture: ComponentFixture<TelegramBotComponent>;
 	
 	beforeEach(async() => {
 		await TestBed.configureTestingModule({
-			imports: [ProjectCardComponent],
+			imports: [TelegramBotComponent],
 		})
 			.compileComponents();
 		
-		fixture = TestBed.createComponent(ProjectCardComponent);
+		fixture = TestBed.createComponent(TelegramBotComponent);
 		component = fixture.componentInstance;
 		fixture.detectChanges();
 	});

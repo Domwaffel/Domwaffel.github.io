@@ -4,9 +4,8 @@
 
 $theme: mat.define-theme((
         color: (
-                theme-type: light,
-                primary: mat.$azure-palette,
-                tertiary: mat.$blue-palette,
+                theme-type: dark,
+                primary: mat.$cyan-palette,
         )
 ));
 

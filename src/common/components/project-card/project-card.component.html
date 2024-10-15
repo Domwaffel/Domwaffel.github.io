@@ -1,0 +1,12 @@
+<mat-card class="project-card">
+	<img src="{{project.image}}" alt="">
+	<mat-card-header>
+		<mat-card-title>{{ project.name }}</mat-card-title>
+	</mat-card-header>
+	<mat-card-content>
+		<p>{{ project.description }}</p>
+		<mat-chip-set aria-label="Project Tags">
+			<mat-chip *ngFor="let this_chip of project.chips">{{ this_chip.name }}</mat-chip>
+		</mat-chip-set>
+	</mat-card-content>
+</mat-card>

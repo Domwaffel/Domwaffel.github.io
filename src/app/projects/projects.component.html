@@ -1,1 +1,6 @@
 <p>projects works!</p>
+<ul>
+	<li *ngFor="let project of PROJECTS">{{project.name}}</li>
+</ul>
+
+<app-project-card *ngFor="let this_project of PROJECTS" [project]="this_project"></app-project-card>

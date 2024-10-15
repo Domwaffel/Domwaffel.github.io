@@ -2,12 +2,12 @@ import {Project, ProjectChipType} from "./datatypes";
 
 
 // Routes have to be edited in src/app/projects/projects.routes.ts
-export const PROJECTS: Project[] = [
+export const PROJECTS: [Project] = [
 	{
 		tag: "qr-solver",
 		name: "QR Riddle Solver",
 		description: "Helper tool for soling a QR-Code based riddle.",
-		image: "./qr-solver/qr-solver.png",
+		image: "/qr-solver.png",
 		chips: [
 			{
 				name: "HTML",

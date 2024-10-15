@@ -1,6 +1,8 @@
 @use "@angular/material" as mat;
 
 @use "./common/components/navbar/navbar-theme";
+@use "./common/components/logo/app-logo";
+@use "./common/components/project-card/project-card-theme";
 
 // Styles for the docs app that are based on the current theme.
 @mixin theme($theme) {
@@ -17,4 +19,6 @@
   }
 
   @include navbar-theme.theme($theme);
+  @include app-logo.theme($theme);
+  @include project-card-theme.theme($theme);
 }

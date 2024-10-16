@@ -1,7 +1,6 @@
 import {Routes} from "@angular/router";
 import {CalculatorComponent} from "./calculator/calculator.component";
 import {ImprovedPotatoComponent} from "./improved-potato/improved-potato.component";
-import {P5jsComponent} from "./p5js/p5js.component";
 import {ProjectsComponent} from "./projects.component";
 import {QrSolverComponent} from "./qr-solver/qr-solver.component";
 import {TelegramBotComponent} from "./telegram-bot/telegram-bot.component";
@@ -22,7 +21,7 @@ export const routes: Routes = [
 	},
 	{
 		path: "p5js",
-		component: P5jsComponent,
+		loadChildren: () => import("./p5js/p5js.routes").then((m) => m.routes),
 	},
 	{
 		path: "telegram-bot",

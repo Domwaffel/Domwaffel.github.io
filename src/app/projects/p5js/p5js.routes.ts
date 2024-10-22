@@ -31,5 +31,5 @@ export const routes: Routes = [
 	{
 		path: "snake",
 		component: SnakeComponent,
-	}
+	},
 ];

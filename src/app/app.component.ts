@@ -10,5 +10,5 @@ import {NavbarComponent} from "../common/components/navbar/navbar.component";
 	styleUrl: "./app.component.scss",
 })
 export class AppComponent {
-	title = "dmeurer.github.io";
+	title = "Dominik Meurer";
 }

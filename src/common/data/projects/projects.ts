@@ -87,7 +87,45 @@ export const PROJECTS: Project[] = [
 			},
 		],
 	},
+	{
+		tag: "pretty-print-dmeurer",
+		name: "Pretty Print Dmeurer",
+		description: "A Python library to make colored output in the terminal. I just wanted to make my terminal output look pretty.",
+		image: "/projects/pretty_print_dmeurer.png",
+		chips: [
+			{
+				name: "Python",
+				type: ProjectChipType.LANGUAGE,
+			},
+			{
+				name: "Library",
+				type: ProjectChipType.INTERFACE,
+			},
+		],
+	},
+	{
+		tag: "web-scraper-library",
+		name: "Web Scraper Library",
+		description: "A Python library to scrape websites. It is designed to scrape product catalogues and similar websites, and that with little to no coding knowledge required.",
+		image: "/projects/web_scraper_lib.png",
+		chips: [
+			{
+				name: "Python",
+				type: ProjectChipType.LANGUAGE,
+			},
+			{
+				name: "Library",
+				type: ProjectChipType.INTERFACE,
+			},
+			{
+				name: "Web-Scraping",
+				type: ProjectChipType.USE_CASE,
+			},
+		],
+	},
 ];
+
+
 export const PROJECTS_P5JS: Project[] = [
 	{
 		tag: "qr-solver",

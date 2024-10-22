@@ -6,7 +6,7 @@
 	<mat-card-content>
 		<p>{{ project.description }}</p>
 		<mat-chip-set aria-label="Project Tags">
-			<mat-chip disableRipple *ngFor="let this_chip of project.chips">{{ this_chip.name }}</mat-chip>
+			<mat-chip *ngFor="let this_chip of project.chips" disableRipple>{{ this_chip.name }}</mat-chip>
 		</mat-chip-set>
 	</mat-card-content>
 </mat-card>

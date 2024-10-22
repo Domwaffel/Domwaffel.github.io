@@ -8,9 +8,9 @@ import {Component} from "@angular/core";
 	styleUrl: "./improved-potato.component.scss",
 })
 export class ImprovedPotatoComponent {
-
+	
 	constructor() {
-		window.location.href = "https://github.com/DMeurer/improved-potato"
+		window.location.href = "https://github.com/DMeurer/improved-potato";
 	}
-
+	
 }
